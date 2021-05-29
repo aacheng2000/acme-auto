@@ -1,0 +1,34 @@
+{
+  "name": "acme-auto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "build:dev": "npm run build -- --mode=development --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon server --ignore src/ --ignore dist/ & npm run build:dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aacheng2000/acme-auto.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aacheng2000/acme-auto/issues"
+  },
+  "homepage": "https://github.com/aacheng2000/acme-auto#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.6.0",
+    "sequelize": "^6.6.2"
+  },
+  "devDependencies": {
+    "axios": "^0.21.1",
+    "nodemon": "^2.0.7",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
+  }
+}
